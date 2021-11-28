@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "spreadsheed-automation",
+  "private_key_id": "b4874085c9fd4567d1f081c7a54ce82c43c7050b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDuLO8eooivhoFM\nL6+UdYfsStASvME6jlV50AfoeIWmP1dtSjKDYL/0HHkw7EWJiJsXftP6TEsNkxrZ\nDAUGlB8rpDIjneBEuJxOiB6gLUdfYG89JKvQWwbwlCyluxcoSZYHLoWV4CrpVfDG\nkNt/t4okajwQwmGwtOTBepMXezVk0l5FJ8jB3PmlZF+u49yzYCmBjZRUElvH2hmF\ng49b7zUNuax7pi9a3waft7NQmm/NL6yQQGioIZ8HyjYdJffgrEh1yOozOLtEHg5v\nUGn0Segt2zxE26Hs5s5QhiXMTvfnvTaac90jDDskWRTAs5OXoMwV8WdiazzTtQc/\nE9mD5vWJAgMBAAECggEABz9KcWIHCww/3/EYLx9vvjK9PRdi689hQ3PJ4dAqWkIq\n0geux3eeBPq0J1cb0JEIYxZ4CHGM28IM+utriw/ebkYF7ovYbfmOFrJRTZTDILWp\np4XM9+nlKVSLkpQW+CIGaiaHaGWUo1qlmRfW+KkS5NkaBcqHDXObqFV8p1DCRv80\nA4PJU9tE6yNAEauy2AIlCRTQhiseoY/fEDVL+gYRKpSABVQIJWKZWmrICBa5JPvs\nxFYlWeYTO+NXW5EM0UTvKOfF+PIUkKsVL4ZMc3WJycLOoogrS1e1+rhU2828nfr8\n4kFHbX3nHB5C5AJOkXKP3wPZ/xVTgyeUpmlIJpcG9wKBgQD8ikGDp/DVpd+r5yLZ\nrSVw9/jYmBYCBhZA4f88Q7FbkZHgsvZdLBV4dQURhscPC3yg289uY0CIxX5zbCsS\n6qvauZs9XPhNVynKeOLSnppBHlZPQbXDcAM/uJT6a8nSTCyZlnBclvDH7oiALVQU\nwhq8k7ho8SMD4LcBR1cNYOoKfwKBgQDxcEv77k40a6xt040rB3jIxOjDI7GeoLrN\nGKI7xmW08Y3MRtRN1uIxq8LQUcNNHDHIgpQ8LwA43FBvn55Z7uilTItGmfOjgutX\nP26vepLi6Kx6gGb/plTvOb1RRd7DLkiMbJi2xamBM0kEDjkv6lM0bYaYQ8vQu6al\nlLoNAOyr9wKBgQDxwSCqelDRFfOjSqdQHrLjDF+KaT1YPp97CV4fQOY+NIKjym6S\nDyuWnt91QcK5olNyYjqXACi9ReKheAFcII7X2irEeYWx9CkrjMIGwpIEmJgjU1I/\nf7F8hKUJfbo8uXNQrHVwDYb+vlip67q8DH0v3XIB9CWDBtHqRXMOeaJS3QKBgQC/\nKq5PPOIZKYQutYmaH2FofljaYcG6mwMtb6rM74sKWRRwQUjKlTEmKRyoe4TK4l8c\npx+eA40GeJMLvvPPu5XjhBbnAPDjb77Np0EJmmEBXz9qA48KLvYjMLGQz2TRYC07\nWqUUWq+ayDOxDV4EbWISKgKfP1b64AnUI02pDClZAwKBgBy2oFP79KeoQJHdcdRI\nmD6mb6f7pDj+/w3v+9sR7uXSFZkjKxqBJ2/CnqWRQhjjeZv7Ks+JV+8JliNxbTrw\ni8B6zQzJz3t1nonAMEWOe37ElQwQi58ygCXIQ+GV9QAEL/yJ3uauafcEoIQ0l94z\nxciGIo2whEGQa88BhMd3qQY+\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheedautomation@spreadsheed-automation.iam.gserviceaccount.com",
+  "client_id": "111231344765714381032",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheedautomation%40spreadsheed-automation.iam.gserviceaccount.com"
+}
