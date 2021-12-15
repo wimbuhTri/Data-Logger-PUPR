@@ -38,6 +38,9 @@ def on_message(client, userdata, message):
 	string_telemetri = str(message.payload.decode("utf-8"))
 	print(string_telemetri)
 	
+	
+
+	
 	#Querying_Job = multiprocessing.Process(target=send_influx, kwargs={"value":string_telemetri})
 	#Querying_Job.start()
  

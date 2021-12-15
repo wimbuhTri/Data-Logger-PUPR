@@ -3,7 +3,7 @@ RTC_DS3231 rtc;
 char dataHari[7][12] = {"Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"};
 String hari;
 int tanggal, bulan, tahun, jam, menit, detik;
-float suhu;
+//float suhu;
 
 void setup () {
   Serial.begin(9600);

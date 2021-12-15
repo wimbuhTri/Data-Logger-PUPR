@@ -8,29 +8,27 @@
 */
 #define DUST_SENSOR_DIGITAL_PIN_PM10  2        // DSM501 Pin 2 of DSM501 (jaune / Yellow)
 #define DUST_SENSOR_DIGITAL_PIN_PM25  3        // DSM501 Pin 4 (rouge / red) 
-
-
-//#include <LiquidCrystal.h>
-//LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
-
+unsigned long starttime;
+float concentration1 = 0;
+float concentration2 = 0;
+/*
 int pin2 = 2;
 int pin1 = 3;
 unsigned long duration1;
 unsigned long duration2;
-
-unsigned long starttime;
-unsigned long sampletime_ms = 3000;//sampe 1s ;
+unsigned long sampletime_ms = 1000;//sampe 1s ;
 unsigned long lowpulseoccupancy1 = 0;
 unsigned long lowpulseoccupancy2 = 0;
 float ratio1 = 0;
 float ratio2 = 0;
-float concentration1 = 0;
-float concentration2 = 0;
+*/
+/*
 int wLed = A1;
 int gLed = A2;
 int yLed = A3;
 int rLed = A4;
 int bLed = A5;
+*/
 
 void setup() {
   Serial.begin(9600);
@@ -44,18 +42,30 @@ void setup() {
   pinMode(bLed,OUTPUT);
   */
   starttime = millis();//get the current time;
-  //lcd.begin(16, 2);
 }
 
-void loop() {
+float do_dust(){
+  float concentration1 = 0;
+  float concentration2 = 0;
+  int pin2 = 2;
+  int pin1 = 3;
+  unsigned long duration1;
+  unsigned long duration2;
+  unsigned long starttime;
+  unsigned long sampletime_ms = 1000;//sampe 1s ;
+  unsigned long lowpulseoccupancy1 = 0;
+  unsigned long lowpulseoccupancy2 = 0;
+  float ratio1 = 0;
+  float ratio2 = 0;
+   
   duration1 = pulseIn(pin1, LOW);
   duration2 = pulseIn(pin2, LOW);
   lowpulseoccupancy1 = lowpulseoccupancy1+duration1;
   lowpulseoccupancy2 = lowpulseoccupancy2+duration2;
 
 
-  if ((millis()-starttime) > sampletime_ms)//if the sampel time == 30s
-  {
+  //if ((millis()-starttime) > sampletime_ms)//if the sampel time == 30s
+  //{
     ratio1 = lowpulseoccupancy1/(sampletime_ms*10.0);  // Integer percentage 0=>100
     concentration1 = 1.1*pow(ratio1,3)-3.8*pow(ratio1,2)+520*ratio1+0.62; // using spec sheet curve
 
@@ -68,6 +78,7 @@ void loop() {
     lcd.setCursor(6, 0);
     lcd.print(concentration1,3);
     */   
+ 
     Serial.print("concentration1 = ");
     Serial.print(concentration1);
     Serial.println(" pcs/0.01cf  -  ");
@@ -76,6 +87,7 @@ void loop() {
     Serial.print(concentration2);
     Serial.println(" pcs/0.01cf  -  ");
     Serial.println();
+ 
     /*
     if (concentration1 < 1000) {
      lcd.setCursor (0, 1);
@@ -163,5 +175,18 @@ for (int i = 0; i < 16; ++i)
     lowpulseoccupancy1 = 0;
     lowpulseoccupancy2 = 0;
     starttime = millis();
-  }
+  //}
+  //return concentration1, concentration2;
+
+}
+
+void loop() {
+  /*
+  float concentration1;
+  float concentration2;
+  concentration1, concentration2 = do_dust();
+  Serial.println(concentration1, concentration2);
+  */
+  do_dust();
+  delay(1000);
 }
