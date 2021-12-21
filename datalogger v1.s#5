@@ -1724,24 +1724,6 @@ Cheap on ebay</description>
 <smd name="5V" x="4.73" y="4" dx="2" dy="8" layer="16"/>
 <smd name="GND" x="8.46" y="4" dx="2" dy="8" layer="16"/>
 </package>
-<package name="JOMP-NO">
-<polygon width="0.1524" layer="16">
-<vertex x="0" y="0"/>
-<vertex x="0" y="2"/>
-<vertex x="2" y="2"/>
-<vertex x="3" y="1"/>
-<vertex x="2" y="0"/>
-</polygon>
-<polygon width="0.1524" layer="16">
-<vertex x="3" y="2"/>
-<vertex x="6" y="2"/>
-<vertex x="6" y="0"/>
-<vertex x="3" y="0"/>
-<vertex x="4" y="1"/>
-</polygon>
-<smd name="J1" x="1" y="1" dx="2" dy="2" layer="16" roundness="9"/>
-<smd name="J2" x="5" y="1" dx="2" dy="2" layer="16" roundness="9"/>
-</package>
 </packages>
 <symbols>
 <symbol name="EDGE_CONNECTOR">
@@ -1752,25 +1734,6 @@ Cheap on ebay</description>
 <pin name="12V" x="6.5" y="16.75" length="middle" rot="R180"/>
 <pin name="5V" x="6.5" y="11.75" length="middle" rot="R180"/>
 <pin name="GND" x="6.5" y="7" length="middle" rot="R180"/>
-</symbol>
-<symbol name="JUMP-NO">
-<polygon width="0.1524" layer="94">
-<vertex x="0" y="0"/>
-<vertex x="0" y="5.08"/>
-<vertex x="5.08" y="5.08"/>
-<vertex x="7.62" y="2.54"/>
-<vertex x="5.08" y="0"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="7.62" y="5.08"/>
-<vertex x="15.24" y="5.08"/>
-<vertex x="15.24" y="0"/>
-<vertex x="7.62" y="0"/>
-<vertex x="10.16" y="2.54"/>
-</polygon>
-<pin name="J1" x="2.54" y="2.54" length="middle" rot="R180"/>
-<pin name="J2" x="12.7" y="2.54" length="middle"/>
-<text x="2.54" y="7.62" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1785,22 +1748,6 @@ Cheap on ebay</description>
 <connect gate="G$1" pin="12V" pad="12V"/>
 <connect gate="G$1" pin="5V" pad="5V"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMP-NO">
-<gates>
-<gate name="G$1" symbol="JUMP-NO" x="5.08" y="0"/>
-</gates>
-<devices>
-<device name="" package="JOMP-NO">
-<connects>
-<connect gate="G$1" pin="J1" pad="J1"/>
-<connect gate="G$1" pin="J2" pad="J2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1910,8 +1857,6 @@ Cheap on ebay</description>
 <part name="U$3" library="P_Dusk" deviceset="EDGE_CONNECTOR" device=""/>
 <part name="X1" library="power-jack" deviceset="DC" device="-5MM" technology="-2.1MM"/>
 <part name="5V_REGS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="NO_JMP" library="P_Dusk" deviceset="JUMP-NO" device=""/>
-<part name="NO_JMP1" library="P_Dusk" deviceset="JUMP-NO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1950,9 +1895,9 @@ Cheap on ebay</description>
 <attribute name="NAME" x="89.408" y="118.491" size="1.778" layer="95"/>
 <attribute name="VALUE" x="89.408" y="105.156" size="1.778" layer="96"/>
 </instance>
-<instance part="5V_REG_DUST" gate="G$1" x="119.38" y="-5.08" smashed="yes">
-<attribute name="NAME" x="113.03" y="-1.905" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="-10.16" size="1.778" layer="96"/>
+<instance part="5V_REG_DUST" gate="G$1" x="114.3" y="-5.08" smashed="yes">
+<attribute name="NAME" x="107.95" y="-1.905" size="1.778" layer="95"/>
+<attribute name="VALUE" x="107.95" y="-10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="M2" gate="G$1" x="22.86" y="88.9" smashed="yes">
 <attribute name="NAME" x="38.1" y="114.3" size="1.778" layer="95"/>
@@ -1979,12 +1924,6 @@ Cheap on ebay</description>
 <instance part="5V_REGS" gate="G$1" x="-7.62" y="-30.48" smashed="yes">
 <attribute name="NAME" x="-13.97" y="-24.765" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-13.97" y="-35.56" size="1.778" layer="96"/>
-</instance>
-<instance part="NO_JMP" gate="G$1" x="116.84" y="-17.78" smashed="yes">
-<attribute name="NAME" x="119.38" y="-10.16" size="1.778" layer="94"/>
-</instance>
-<instance part="NO_JMP1" gate="G$1" x="20.32" y="15.24" smashed="yes">
-<attribute name="NAME" x="22.86" y="22.86" size="1.778" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -2025,16 +1964,6 @@ Cheap on ebay</description>
 <pinref part="SGP30" gate="A" pin="1"/>
 <wire x1="93.98" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
 <label x="76.2" y="17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="NO_JMP" gate="G$1" pin="J2"/>
-<wire x1="129.54" y1="-15.24" x2="144.78" y2="-15.24" width="0.1524" layer="91"/>
-<label x="141.478" y="-14.986" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="NO_JMP1" gate="G$1" pin="J2"/>
-<wire x1="33.02" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
-<label x="45.72" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA-DHT22" class="0">
@@ -2152,9 +2081,9 @@ Cheap on ebay</description>
 <label x="76.2" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="M2" gate="G$1" pin="D12/MISO"/>
-<wire x1="2.54" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
-<label x="-10.16" y="71.12" size="1.778" layer="95"/>
+<wire x1="2.54" y1="73.66" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
+<label x="-10.16" y="73.66" size="1.778" layer="95"/>
+<pinref part="M2" gate="G$1" pin="D11/MOSI"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2164,9 +2093,9 @@ Cheap on ebay</description>
 <label x="76.2" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="M2" gate="G$1" pin="D11/MOSI"/>
-<wire x1="2.54" y1="73.66" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
-<label x="-10.16" y="73.66" size="1.778" layer="95"/>
+<wire x1="2.54" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
+<label x="-10.16" y="71.12" size="1.778" layer="95"/>
+<pinref part="M2" gate="G$1" pin="D12/MISO"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -2289,24 +2218,19 @@ Cheap on ebay</description>
 <wire x1="93.98" y1="-5.08" x2="76.2" y2="-5.08" width="0.1524" layer="91"/>
 <label x="76.2" y="-5.08" size="1.778" layer="95"/>
 <pinref part="5V_REG_DUST" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="-5.08" x2="106.68" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-5.08" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="93.98" y="-5.08"/>
-<pinref part="NO_JMP" gate="G$1" pin="J1"/>
-<wire x1="106.68" y1="-5.08" x2="116.84" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-15.24" x2="106.68" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-15.24" x2="106.68" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="106.68" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="5V"/>
 <wire x1="2.54" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<label x="7.62" y="22.86" size="1.778" layer="95"/>
 <pinref part="5V_REG_WEMOS" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="5.08" x2="-4.064" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="22.86" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="NO_JMP1" gate="G$1" pin="J1"/>
-<wire x1="15.24" y1="17.78" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<junction x="15.24" y="17.78"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
+<junction x="15.24" y="5.08"/>
 </segment>
 <segment>
 <pinref part="LCD" gate="A" pin="3"/>
