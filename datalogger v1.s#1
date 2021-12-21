@@ -2195,9 +2195,9 @@ Cheap on ebay</description>
 <pinref part="M2" gate="G$1" pin="D0/RX"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="RX"/>
-<wire x1="2.54" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
-<label x="7.62" y="38.354" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="TX"/>
+<wire x1="2.54" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+<label x="7.874" y="41.148" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_WEMOS" class="0">
@@ -2207,9 +2207,9 @@ Cheap on ebay</description>
 <pinref part="M2" gate="G$1" pin="D1/TX"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="TX"/>
-<wire x1="2.54" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
-<label x="7.874" y="41.148" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="RX"/>
+<wire x1="2.54" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="7.62" y="38.354" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_REG" class="0">

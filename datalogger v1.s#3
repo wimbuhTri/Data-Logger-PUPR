@@ -1968,14 +1968,14 @@ Cheap on ebay</description>
 </net>
 <net name="DATA-DHT22" class="0">
 <segment>
+<pinref part="DHT22" gate="A" pin="2"/>
+<wire x1="93.98" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<label x="76.2" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
 <wire x1="2.54" y1="91.44" x2="-10.16" y2="91.44" width="0.1524" layer="91"/>
 <label x="-15.24" y="91.44" size="1.778" layer="95"/>
 <pinref part="M2" gate="G$1" pin="D4"/>
-</segment>
-<segment>
-<pinref part="DHT22" gate="A" pin="3"/>
-<wire x1="93.98" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<label x="76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1983,6 +1983,11 @@ Cheap on ebay</description>
 <pinref part="RTC" gate="A" pin="1"/>
 <wire x1="93.98" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 <label x="76.2" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DHT22" gate="A" pin="3"/>
+<wire x1="93.98" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<label x="76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MICRO-SD" gate="A" pin="1"/>
@@ -2033,11 +2038,6 @@ Cheap on ebay</description>
 <pinref part="M2" gate="G$1" pin="GND.1"/>
 <wire x1="2.54" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
 <label x="-10.16" y="99.06" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DHT22" gate="A" pin="2"/>
-<wire x1="93.98" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
-<label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">

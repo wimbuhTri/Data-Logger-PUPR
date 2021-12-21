@@ -1328,19 +1328,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="MISO">
 <contactref element="MICRO-SD" pad="3"/>
-<contactref element="M2" pad="J1.14"/>
-<wire x1="18.923" y1="49.657" x2="18.923" y2="47.371" width="0.4" layer="16"/>
-<wire x1="18.923" y1="47.371" x2="20.193" y2="46.101" width="0.4" layer="16" curve="90"/>
-<wire x1="20.193" y1="46.101" x2="21.59" y2="44.704" width="0.4" layer="16" curve="-90"/>
-<wire x1="21.59" y1="44.704" x2="21.59" y2="42.037" width="0.4" layer="16"/>
+<contactref element="M2" pad="J1.15"/>
+<wire x1="18.923" y1="42.164" x2="19.05" y2="42.037" width="0.4" layer="16"/>
+<wire x1="18.923" y1="49.657" x2="18.923" y2="42.164" width="0.4" layer="16"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MICRO-SD" pad="4"/>
-<contactref element="M2" pad="J1.15"/>
-<wire x1="16.383" y1="46.609" x2="17.78" y2="45.212" width="0.4" layer="16" curve="90"/>
-<wire x1="17.78" y1="45.212" x2="19.05" y2="43.942" width="0.4" layer="16" curve="-90"/>
-<wire x1="16.383" y1="49.657" x2="16.383" y2="46.609" width="0.4" layer="16"/>
-<wire x1="19.05" y1="43.942" x2="19.05" y2="42.037" width="0.4" layer="16"/>
+<contactref element="M2" pad="J1.14"/>
+<wire x1="16.383" y1="46.82911875" x2="16.383" y2="49.657" width="0.4" layer="16"/>
+<wire x1="15.53738125" y1="38.7255" x2="13.4525" y2="40.81038125" width="0.4" layer="16"/>
+<wire x1="13.4525" y1="40.81038125" x2="13.4525" y2="43.89861875" width="0.4" layer="16"/>
+<wire x1="13.4525" y1="43.89861875" x2="16.383" y2="46.82911875" width="0.4" layer="16"/>
+<wire x1="20.19335" y1="38.7255" x2="15.53738125" y2="38.7255" width="0.4" layer="16"/>
+<wire x1="21.59" y1="42.037" x2="21.59" y2="40.12215" width="0.4" layer="16"/>
+<wire x1="21.59" y1="40.12215" x2="20.19335" y2="38.7255" width="0.4" layer="16"/>
 </signal>
 <signal name="CLK">
 <contactref element="MICRO-SD" pad="5"/>
