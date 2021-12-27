@@ -2081,9 +2081,9 @@ Cheap on ebay</description>
 <label x="76.2" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="2.54" y1="73.66" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
-<label x="-10.16" y="73.66" size="1.778" layer="95"/>
-<pinref part="M2" gate="G$1" pin="D11/MOSI"/>
+<pinref part="M2" gate="G$1" pin="D12/MISO"/>
+<wire x1="2.54" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
+<label x="-10.16" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2093,9 +2093,9 @@ Cheap on ebay</description>
 <label x="76.2" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="2.54" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
-<label x="-10.16" y="71.12" size="1.778" layer="95"/>
-<pinref part="M2" gate="G$1" pin="D12/MISO"/>
+<pinref part="M2" gate="G$1" pin="D11/MOSI"/>
+<wire x1="2.54" y1="73.66" x2="-10.16" y2="73.66" width="0.1524" layer="91"/>
+<label x="-10.16" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK" class="0">

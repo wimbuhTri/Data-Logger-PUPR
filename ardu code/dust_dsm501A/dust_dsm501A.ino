@@ -79,14 +79,14 @@ float do_dust(){
     lcd.print(concentration1,3);
     */   
  
-    Serial.print("concentration1 = ");
-    Serial.print(concentration1);
-    Serial.println(" pcs/0.01cf  -  ");
+    //Serial.print("concentration1 = ");
+    //Serial.println(concentration1);
+    //Serial.println(" pcs/0.01cf  -  ");
 
-    Serial.print("concentration2 = ");
-    Serial.print(concentration2);
-    Serial.println(" pcs/0.01cf  -  ");
-    Serial.println();
+    //Serial.print("concentration2 = ");
+    Serial.println(concentration2);
+    //Serial.println(" pcs/0.01cf  -  ");
+    //Serial.println();
  
     /*
     if (concentration1 < 1000) {

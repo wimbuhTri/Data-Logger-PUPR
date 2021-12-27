@@ -1223,7 +1223,6 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="5V">
-<contactref element="DHT22" pad="1"/>
 <contactref element="RTC" pad="2"/>
 <contactref element="MICRO-SD" pad="2"/>
 <contactref element="DSM501A" pad="3"/>
@@ -1233,10 +1232,10 @@ design rules under a new name.</description>
 <wire x1="11.938" y1="8.382" x2="11.938" y2="4.826" width="1" layer="16"/>
 <wire x1="11.938" y1="4.826" x2="13.208" y2="3.556" width="1" layer="16"/>
 <wire x1="13.208" y1="3.556" x2="16.637" y2="3.556" width="1" layer="16"/>
-<wire x1="78.4686" y1="56.1514" x2="33.909" y2="56.1514" width="1" layer="16"/>
+<wire x1="78.4686" y1="56.1514" x2="36.449" y2="56.1514" width="1" layer="16"/>
+<wire x1="36.449" y1="56.1514" x2="34.163" y2="56.1514" width="1" layer="16"/>
 <contactref element="M2" pad="J2.4"/>
-<wire x1="33.909" y1="56.1514" x2="31.623" y2="56.1514" width="1" layer="16"/>
-<wire x1="31.623" y1="56.1514" x2="24.6554" y2="56.1514" width="1" layer="16"/>
+<wire x1="34.163" y1="56.1514" x2="24.6554" y2="56.1514" width="1" layer="16"/>
 <wire x1="46.99" y1="26.797" x2="46.99" y2="26.416" width="1" layer="16"/>
 <wire x1="24.6554" y1="56.1514" x2="21.463" y2="52.959" width="1" layer="16"/>
 <wire x1="21.463" y1="52.197" x2="21.463" y2="52.959" width="1" layer="16"/>
@@ -1280,20 +1279,21 @@ design rules under a new name.</description>
 <wire x1="72.204190625" y1="24.960190625" x2="62.298190625" y2="24.960190625" width="1" layer="16"/>
 <wire x1="50.927" y1="53.594" x2="49.276" y2="51.943" width="1" layer="16"/>
 <wire x1="49.276" y1="51.943" x2="49.276" y2="49.911" width="1" layer="16"/>
-<wire x1="31.623" y1="56.1514" x2="32.766" y2="55.0084" width="1" layer="16"/>
+<wire x1="34.163" y1="56.1514" x2="35.306" y2="55.0084" width="1" layer="16"/>
 <wire x1="39.3065" y1="4.7625" x2="39.37" y2="4.699" width="1" layer="16"/>
 <wire x1="39.37" y1="4.699" x2="40.513" y2="3.556" width="1" layer="16"/>
 <wire x1="18.161" y1="5.08" x2="16.637" y2="3.556" width="1" layer="16"/>
 <wire x1="18.034" y1="7.493" x2="18.034" y2="3.937" width="1" layer="16"/>
 <wire x1="18.034" y1="3.937" x2="17.653" y2="3.556" width="1" layer="16"/>
-<wire x1="33.909" y1="56.1514" x2="32.766" y2="55.0084" width="1" layer="16"/>
-<wire x1="32.766" y1="55.0084" x2="32.766" y2="49.784" width="1" layer="16"/>
+<wire x1="36.449" y1="56.1514" x2="35.306" y2="55.0084" width="1" layer="16"/>
 <contactref element="U$4" pad="J2"/>
 <contactref element="U$5" pad="J2"/>
 <wire x1="79.676" y1="45.45" x2="82.28" y2="45.45" width="1" layer="16"/>
 <wire x1="82.28" y1="45.45" x2="82.55" y2="45.72" width="1" layer="16"/>
 <wire x1="28.305" y1="5.795" x2="28.305" y2="3.921" width="1" layer="16"/>
 <wire x1="28.305" y1="3.921" x2="27.94" y2="3.556" width="1" layer="16"/>
+<contactref element="DHT22" pad="2"/>
+<wire x1="35.306" y1="55.0084" x2="35.306" y2="49.784" width="1" layer="16"/>
 <wire x1="46.99" y1="26.797" x2="49.276" y2="49.911" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3">
@@ -1331,7 +1331,7 @@ design rules under a new name.</description>
 <wire x1="75.319" y1="4.326" x2="75.311" y2="4.318" width="1" layer="16"/>
 <wire x1="81.989" y1="2.926" x2="75.443" y2="2.926" width="1" layer="16"/>
 <wire x1="75.443" y1="2.926" x2="75.438" y2="2.921" width="1" layer="16"/>
-<contactref element="DHT22" pad="2"/>
+<contactref element="DHT22" pad="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="RTC" pad="3"/>

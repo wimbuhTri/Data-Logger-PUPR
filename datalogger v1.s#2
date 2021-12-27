@@ -1983,8 +1983,8 @@ Cheap on ebay</description>
 <instance part="NO_JMP" gate="G$1" x="116.84" y="-17.78" smashed="yes">
 <attribute name="NAME" x="119.38" y="-10.16" size="1.778" layer="94"/>
 </instance>
-<instance part="NO_JMP1" gate="G$1" x="20.32" y="15.24" smashed="yes">
-<attribute name="NAME" x="22.86" y="22.86" size="1.778" layer="94"/>
+<instance part="NO_JMP1" gate="G$1" x="40.64" y="15.24" smashed="yes">
+<attribute name="NAME" x="43.18" y="22.86" size="1.778" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -2033,8 +2033,8 @@ Cheap on ebay</description>
 </segment>
 <segment>
 <pinref part="NO_JMP1" gate="G$1" pin="J2"/>
-<wire x1="33.02" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
-<label x="45.72" y="17.78" size="1.778" layer="95"/>
+<wire x1="53.34" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+<label x="58.42" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA-DHT22" class="0">
@@ -2088,12 +2088,12 @@ Cheap on ebay</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="2.54" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="91"/>
-<label x="7.62" y="25.4" size="1.778" layer="95"/>
+<label x="12.7" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LCD" gate="A" pin="4"/>
-<wire x1="33.274" y1="27.94" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
-<label x="15.24" y="27.94" size="1.778" layer="95"/>
+<wire x1="33.274" y1="27.94" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
+<label x="22.86" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VOUT-"/>
@@ -2298,22 +2298,6 @@ Cheap on ebay</description>
 <junction x="106.68" y="-5.08"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="5V"/>
-<wire x1="2.54" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="5V_REG_WEMOS" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="5.08" x2="-4.064" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="22.86" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="NO_JMP1" gate="G$1" pin="J1"/>
-<wire x1="15.24" y1="17.78" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<junction x="15.24" y="17.78"/>
-</segment>
-<segment>
-<pinref part="LCD" gate="A" pin="3"/>
-<wire x1="33.274" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
-<label x="15.24" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="VOUT+"/>
 <wire x1="-33.02" y1="-7.62" x2="-20.32" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-27.94" y="-7.62" size="1.778" layer="95"/>
@@ -2419,6 +2403,24 @@ Cheap on ebay</description>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="55.88" y1="-10.16" x2="68.58" y2="-10.16" width="0.1524" layer="91"/>
 <label x="63.5" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="5V"/>
+<wire x1="2.54" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="5V_REG_WEMOS" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="5.08" x2="-4.064" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="NO_JMP1" gate="G$1" pin="J1"/>
+<wire x1="43.18" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
+<junction x="10.16" y="17.78"/>
+<pinref part="LCD" gate="A" pin="3"/>
+<wire x1="20.32" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="33.274" y1="30.48" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="30.48" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
+<junction x="20.32" y="17.78"/>
 </segment>
 </net>
 </nets>

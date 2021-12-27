@@ -103,6 +103,7 @@ void loop()
     r_CO2 = mySensor.CO2;
     r_TVOC = mySensor.TVOC;
     Serial.print("SGP30 :");
+    
     Serial.print(r_CO2);
     Serial.print(" , ");
     Serial.println(r_TVOC);
@@ -110,7 +111,7 @@ void loop()
     //HCHO
     float Vi = 0.1;
     float Vc = 4.95; // Constant voltage from pin
-    int sensorValue = analogRead(A1); // Read analog pin for voltage info in 10 bits
+    int sensorValue = analogRead(A3); // Read analog pin for voltage info in 10 bits
     float Vf = sensorValue * 4.95 / 1023; // Voltage through pin when in presence of VOCs (formaldehyde)
     r_Vi = sensorValue * 4.95 / 102;
     r_FoCom = concentrationPPMform(Vf, Vi); 
