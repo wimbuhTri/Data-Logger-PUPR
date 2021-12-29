@@ -80,7 +80,7 @@ void sendToESP(){
   //String(parameter+value).toCharArray(mystr, sizeof(mystr));   
   Serial.println(telemetry);
   String(telemetry).toCharArray(mystr, sizeof(mystr));   
-  //Serial1.write(mystr,100); //Write the serial data
+  Serial1.write(mystr,100); //Write the serial data
 }
 
 
