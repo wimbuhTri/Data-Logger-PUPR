@@ -254,7 +254,7 @@ void loop() {
     r_Vi = sensorValue * 4.95 / 102;
     r_FoCom = concentrationPPMform(Vf, Vi);
      
-    //sendToESP();
+    sendToESP();
   
     
         
