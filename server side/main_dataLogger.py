@@ -25,9 +25,11 @@ def schadule_handler(sleep,gspread_multirowOBJ,queue,send_interval):
 			while not queue.empty():
 				unpacked.append(queue.get())
 			print("unpackedd")
+			unpacked.reverse()
 			gspread_multirowOBJ(unpacked)
 			print(">>> pushed to Gspread")
 		print("sleeping")
+		unpacked.clear()
 
 
 def mqtt_end_point():
