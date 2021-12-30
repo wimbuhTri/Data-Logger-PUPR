@@ -17,6 +17,13 @@ def postSpreadsheet(theRow):
     sheet.insert_row(formatter(theRow), 2)
     print("send ok")
 
+def post_multi_Spreadsheet(theList):
+    global sheet
+    print("inside send")
+    sheet.insert_rows(theList, 2)
+    print("send ok")
+
+
 def formatter(data):
     print("try splitted")
     add_timestamp = data.split(",")

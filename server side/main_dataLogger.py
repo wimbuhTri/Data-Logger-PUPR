@@ -1,18 +1,34 @@
-from time import time
+from multiprocessing import Process, Queue
+from time import time, sleep
 from random import randint
 #import paho.mqtt.client as paho
 from paho.mqtt import client as paho
 import SpreadsheedAPI as SpreadApi
 import multiprocessing
+
+def gspread_multirowOBJ(theList):
+ 	SpreadApi.post_multi_Spreadsheet(theList)
+
+
 def on_message(client, userdata, message):
 	start = time()  
 	string_telemetri = str(message.payload.decode("utf-8"))
-	print("spdsh try")
-	#print(string_telemetri)
-	SpreadApi.postSpreadsheet(str(string_telemetri))
-	print("spdsh ok")
-	print(string_telemetri)
+	#timestamping and formatting incoimng telemety then put them to the queue
+	queue.put(SpreadApi.formatter(string_telemetri))
  
+def schadule_handler(sleep,gspread_multirowOBJ,queue,send_interval):	
+	unpacked = []
+	while True:
+		sleep(send_interval)
+		if not queue.empty() :
+			print("awake")
+			while not queue.empty():
+				unpacked.append(queue.get())
+			print("unpackedd")
+			gspread_multirowOBJ(unpacked)
+			print(">>> pushed to Gspread")
+		print("sleeping")
+
 
 def mqtt_end_point():
 	"""Build session and init MQTT instance"""
@@ -38,8 +54,14 @@ def mqtt_end_point():
 	
     
 
-if True :#__name__ == '__main__':
+if __name__ == '__main__':
 	try :
+		"""init shaduler"""
+		queue = Queue()
+		send_interval = 5 #detik
+		schadule_handler_process = Process(target=schadule_handler, args=(sleep,gspread_multirowOBJ,queue,send_interval))
+		schadule_handler_process.start()
+		"""init mqtt end point"""
 		mqtt_end_point()
 	except KeyboardInterrupt:
 		print(3*"\n","KeyboardInterrupt catched, exiting")        

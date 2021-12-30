@@ -171,6 +171,7 @@
 <text x="67.437" y="35.433" size="0.75" layer="25" rot="R90">GND</text>
 <text x="57.15" y="4.064" size="0.75" layer="25" rot="R90">GND</text>
 <text x="42.926" y="14.478" size="0.75" layer="25" rot="R180">GND</text>
+<text x="52.07" y="54.61" size="1.778" layer="25">Rev3 Data Logger UGM</text>
 </plain>
 <libraries>
 <library name="adafruit">
